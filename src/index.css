@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#root {
+  background-color: blanchedalmond;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.rock {
+  background-color: rgb(148, 81, 81) !important;
+}
+.ghost {
+  background-color: rgb(247, 247, 247) !important;
+}
+.electric {
+  background-color: rgb(255, 255, 161) !important;
+}
+.bug {
+  background-color: #f6d6a7 !important;
+}
+.poison {
+  background-color: #e0a7f6 !important;
+}
+.normal {
+  background-color: #f4f4f4 !important;
+}
+.fairy {
+  background-color: rgba(255, 192, 203, 0.863) !important;
+}
+.fire {
+  background-color: #ff9380 !important;
+}
+.grass {
+  background-color: #e2f9e1 !important;
+}
+.water {
+  background-color: #87c5f2 !important;
+}
+.psychic {
+  background-color: #bab0fc !important;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 3rem 0.5rem;
+}
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.all-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 6rem;
+  margin: 1.3rem;
+  border: 1px solid #efefef;
+  border-radius: 0.2rem;
+  width: 20rem;
+  text-align: center;
+  box-shadow: 0 3px 15px rgb(0 0 0 / 9%);
+  border-radius: 1rem 1rem 0.5rem 0.5rem;
+}
+
+h3 {
+  margin-bottom: 0.2rem;
+}
+.card-container .number {
+  border-radius: 1rem;
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.card-container img {
+  width: 120px;
+  height: 120px;
+}
+.card-container small {
+  text-transform: capitalize;
+}
+.detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.detail-wrapper button {
+  color: rgb(22, 22, 22);
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.185);
+}
+
+.search-field {
+  display: flex;
+  margin: 10px;
+  width: 20rem;
+  height: 2rem;
+  border: 1.9px solid #22cba8;
+}
+
+input:focus {
+  margin: 10px;
+  border: 2px solid #22cba8;
+  /* box-shadow: none !important; */
+  outline: none !important;
+}
+
+/* input:focus,
+textarea {
+  outline: none !important;
+} */
+
+.search-button {
+  border-radius: 2px;
+  border: 1px solid #c6c6c6;
+  color: #444;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  padding-bottom: 10px 25px;
+  border-radius: 0 5px 5px 0;
+  background-color: #22cba8;
+  color: #fff;
+  margin-left: -10px;
+  cursor: pointer;
+  height: 2rem;
+  transform: scale(1, 1);
+  transition: ease-in-out 0.3s;
+}
+
+.search-button:hover {
+  background-color: #3adfbe;
+  transition: 0.3s;
+}
+
+button:active {
+  box-shadow: 0 0 0 1.5px #5a01a7;
+  background-color: #91ed0f;
+  transition: 0.2s;
+  transform: scale(0.97, 0.97);
+}
+
+.pokemon-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-hp {
+  background-color: #00000017;
+  position: relative;
+  left: 9.5rem;
+  top: -3.5rem;
+  width: 5.6rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+}
+
+.pokemon-attack {
+  background-color: #00000017;
+  position: relative;
+  top: -3.5rem;
+  right: 8.5rem;
+  width: 7rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+}
+
+.pokemon-abilities {
+  margin: 0.5rem 0 0 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.error-message {
+  width: 100%;
+  /* position: relative; */
+  left: 6rem;
+  font-family: 'Early GameBoy';
+  src: url('//db.onlinewebfonts.com/t/3ada9815c06d2619d52d16a5601c96b2.eot?#iefix');
+}
+
+.loading {
+  font-family: 'Early GameBoy';
+  src: url('//db.onlinewebfonts.com/t/3ada9815c06d2619d52d16a5601c96b2.eot?#iefix');
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+h1 {
+  font-family: 'Pokemon';
+  src: url('//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot');
+}
